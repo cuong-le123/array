@@ -99,7 +99,7 @@ console.log (users.length)
 //Xóa (filter: dùng để lọc phần tử thỏa mãn điều kiện)
 function deleteUserByCccd(cccd) {
     var filterUser = users.filter(function (item) {
-        return item.cccd !== cccd;// trả về các user có cccd khác 1 và sẽ bỏ user có cccd là 1
+        return item.cccd !== cccd;
     });
   users = filterUser;// dùng để cập nhật lại Users nếu không có dòng này thì Users vẫn như cũ 
 }
