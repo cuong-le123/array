@@ -55,7 +55,7 @@ addUser(cuong5);
 function editName(cccd, name) {
       var findUser = users.find(function (findUser) {
             return findUser.cccd === cccd;
-          });
+          });//hàm tìm user thỏa mãn cccd
         
   findUser.name = name;
 }
