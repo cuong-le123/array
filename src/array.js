@@ -60,7 +60,7 @@ function editName(cccd, name) {
   findUser.name = name;
 }
 
-
+// Edit age
 function editAge(cccd, age) {
     var findUser = users.find(function (findUser) {
           return findUser.cccd === cccd;
