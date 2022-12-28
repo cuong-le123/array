@@ -88,8 +88,8 @@
                     <th>${users[i].Age}</th>
                     <th>${users[i].Address}</th>
                     <th>
-                        <button onclick = "deleteItem(${users[i].ID})"> Xóa </button>
-                        <button onclick = "editItem(${users[i].ID})"> Chỉnh sửa </button>
+                        <button type="button" onclick = "deleteItem(${users[i].ID})"> Xóa </button>
+                        <button type="button" onclick = "editItem(${users[i].ID})"> Chỉnh sửa </button>
                     </th>
                 </tr>`
             }
@@ -111,16 +111,17 @@
                 }
             }
         }
-
-        function editItem(x){
-            for(let i = 0 ; i < users.length; i++){
-                if(users[i].ID == x ){
-                    document.getElementById("cccd").value = user[i].ID;
-                    document.getElementById("name").value = user[i].Name;
-                    document.getElementById("age").value = user[i].Age;
-                    document.getElementById("address").value = user[i].Address;
+        
+        function editItem (x){
+            for (let i = 0; i < users.length; i++){
+                if (users[i].ID == x){
+                    document.getElementById("cccd").value= users[i].ID
+                    document.getElementById("name").value= users[i].Name
+                    document.getElementById("age").value= users[i].Age
+                    document.getElementById("address").value= users[i].Address
                 }
-            }
+                console.log(users[i]);
+            } 
         }
     </script>
 </body>
